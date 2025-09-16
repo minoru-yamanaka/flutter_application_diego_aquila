@@ -4,10 +4,9 @@ Este é um projeto de aplicativo móvel desenvolvido em Flutter, criado com base
 
 ## ✨ Telas Principais
 
-| Tela de Login | Tela de Perfil | Tela de Projetos |
-| :---: |:---:|:---:|
-| \<img src="[https://storage.googleapis.com/agent-tools-public-content/image\_b672d5.png](https://www.google.com/search?q=https://storage.googleapis.com/agent-tools-public-content/image_b672d5.png)" width="250"\> | \<img src="[https://storage.googleapis.com/agent-tools-public-content/image\_b672f4.png](https://www.google.com/search?q=https://storage.googleapis.com/agent-tools-public-content/image_b672f4.png)" width="250"\> | \<img src="[https://storage.googleapis.com/agent-tools-public-content/image\_b67314.png](https://www.google.com/search?q=https://storage.googleapis.com/agent-tools-public-content/image_b67314.png)" width="250"\> |
-
+| Tela de Login | Projetos (Home) | Mensagens | Perfil |
+| :---: |:---:|:---:|:---:|
+| <img src="img/login.png" width="200"> | <img src="img/home.png" width="200"> | <img src="img/menssages.png" width="200"> | <img src="img/profile.png" width="200"> |
 ## 🚀 Funcionalidades
 
   - **Tela de Autenticação:** Interface de login limpa e intuitiva.
