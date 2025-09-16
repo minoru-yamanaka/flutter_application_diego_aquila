@@ -50,7 +50,7 @@ class ProfilePage extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 14, color: Colors.black54),
               ),
-              const SizedBox(height: 24),
+              const SizedBox(height: 300),
 
               // --- CARD DE ESTATÍSTICAS ---
               Container(
@@ -73,35 +73,43 @@ class ProfilePage extends StatelessWidget {
               ),
               const SizedBox(height: 32),
 
-              // --- BOTÕES DE AÇÃO ---
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: primaryColor,
-                  minimumSize: const Size(double.infinity, 50),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12.0),
+              // --- BOTÕES DE AÇÃO (AGORA EM ROW) ---
+              Row(
+                children: [
+                  Expanded(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: primaryColor,
+                        minimumSize: const Size(0, 50),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12.0),
+                        ),
+                      ),
+                      onPressed: () {},
+                      child: const Text(
+                        'Edit Profile',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
                   ),
-                ),
-                onPressed: () {},
-                child: const Text(
-                  'Edit Profile',
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-              const SizedBox(height: 12),
-              OutlinedButton(
-                style: OutlinedButton.styleFrom(
-                  foregroundColor: primaryColor,
-                  minimumSize: const Size(double.infinity, 50),
-                  side: const BorderSide(color: primaryColor),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12.0),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: OutlinedButton(
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: primaryColor,
+                        minimumSize: const Size(0, 50),
+                        side: const BorderSide(color: primaryColor),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12.0),
+                        ),
+                      ),
+                      onPressed: () {
+                        // Ação de logout
+                      },
+                      child: const Text('Logout'),
+                    ),
                   ),
-                ),
-                onPressed: () {
-                  // Ação de logout
-                },
-                child: const Text('Logout'),
+                ],
               ),
             ],
           ),
