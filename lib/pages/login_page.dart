@@ -7,7 +7,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Cor principal baseada no seu design
-    const primaryColor = Color(0xFFF58524);
+    // const primaryColor = Color(0xFFF58524);
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -25,7 +25,8 @@ class LoginPage extends StatelessWidget {
               Icon(
                 Icons.whatshot, // Ícone de exemplo
                 size: 80,
-                color: primaryColor,
+                // arranquei o const primaryColor = Color(0xFFF58524);
+                color: Color(0xFFF58524),
               ),
               const SizedBox(height: 8),
               const Text(
@@ -34,7 +35,8 @@ class LoginPage extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
-                  color: primaryColor,
+                  // arranquei o const primaryColor = Color(0xFFF58524);
+                  color: Color(0xFFF58524),
                   letterSpacing: 1.5,
                 ),
               ),
@@ -62,7 +64,7 @@ class LoginPage extends StatelessWidget {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12.0),
-                    borderSide: const BorderSide(color: primaryColor),
+                    borderSide: const BorderSide(color: Color(0xFFF58524)),
                   ),
                 ),
               ),
@@ -78,7 +80,10 @@ class LoginPage extends StatelessWidget {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12.0),
-                    borderSide: const BorderSide(color: primaryColor),
+                    borderSide: const BorderSide(
+                      // arranquei o const primaryColor = Color(0xFFF58524);
+                      color: Color(0xFFF58524),
+                    ),
                   ),
                 ),
               ),
@@ -102,7 +107,8 @@ class LoginPage extends StatelessWidget {
               // --- BOTÃO DE LOGIN ---
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: primaryColor,
+                  backgroundColor: Color(0xFFF58524),
+                  // backgroundColor: primaryColor,
                   padding: const EdgeInsets.symmetric(vertical: 16.0),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12.0),
@@ -116,7 +122,11 @@ class LoginPage extends StatelessWidget {
                 },
                 child: const Text(
                   'LOGIN',
-                  style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ],
